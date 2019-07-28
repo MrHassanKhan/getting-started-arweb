@@ -12,7 +12,7 @@
 
     <a-entity camera></a-entity>
   </a-scene> -->
-  <a-scene embedded arjs='sourceType: webcam;'>
+  <a-scene embedded artoolkit='sourceType: webcam;'>
     <!--
       glTF 2.0 Model - busterDrone.gltf
       Using the default hiro marker (Get it below)
@@ -20,11 +20,11 @@
     -->
     <a-marker preset='hiro'>
       <a-entity
-      id="drone"
-      position="0 0 0"
-      scale="1 1 1"
-      gltf-model-next="src: url(./models/busterDrone.gltf);"
-      animation-mixer>
+        id="drone"
+        position="0 0 0"
+        scale="1 1 1"
+        gltf-model-next="src: url(./models/busterDrone.gltf);"
+        animation-mixer>
       </a-entity>
     </a-marker>
     
